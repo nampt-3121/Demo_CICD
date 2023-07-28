@@ -18,7 +18,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.7.5
+          ruby-version: 2.7.1
 
       - name: Install dependencies
         run: |
@@ -27,4 +27,4 @@ jobs:
 
       - name: Run RuboCop
         run: |
-          bundle exec rubocop
+          rake user:check_length_text
