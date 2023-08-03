@@ -1,0 +1,27 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use HEROKU_API_KEY secret
+        run: |
+          echo "HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}"
+      - name: Install Node.js 14
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.14 # This is the action
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+          heroku_app_name: demo-cicd-ruby
+          heroku_email: "ndtuyen177@gmail.com"
