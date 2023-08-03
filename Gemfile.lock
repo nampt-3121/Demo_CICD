@@ -124,6 +124,7 @@ GEM
     parser (3.2.2.3)
       ast (~> 2.4.1)
       racc
+    psych (3.3.4)
     public_suffix (5.0.3)
     puma (4.3.12)
       nio4r (~> 2.0)
@@ -252,6 +253,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.2)
   net-http
+  psych (< 4)
   puma (~> 4.1)
   rails (~> 6.0.6, >= 6.0.6.1)
   rubocop
@@ -267,7 +269,7 @@ DEPENDENCIES
   webpacker (~> 4.0)
 
 RUBY VERSION
-   ruby 2.7.1p83
+   ruby 3.1.2p20
 
 BUNDLED WITH
-   2.1.4
+   2.3.15
