@@ -25,6 +25,6 @@ jobs:
           gem install bundler
           bundle install
 
-      - name: Run RuboCop
+      - name: Run check length of text
         run: |
           rake user:check_length_text

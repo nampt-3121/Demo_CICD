@@ -105,6 +105,8 @@ GEM
     mini_portile2 (2.8.4)
     minitest (5.19.0)
     msgpack (1.7.2)
+    net-http (0.3.2)
+      uri
     net-imap (0.3.7)
       date
       net-protocol
@@ -218,6 +220,7 @@ GEM
     tzinfo (1.2.11)
       thread_safe (~> 0.1)
     unicode-display_width (2.4.2)
+    uri (0.12.2)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -248,6 +251,7 @@ DEPENDENCIES
   capybara (>= 2.15)
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  net-http
   puma (~> 4.1)
   rails (~> 6.0.6, >= 6.0.6.1)
   rubocop
